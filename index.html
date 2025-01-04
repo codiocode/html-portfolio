@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel booking form to Bali</title>
+    <style>
+        /* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Center the header */
+header {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #0073e6;
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for labels and inputs */
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="tel"], input[type="date"], input[type="email"], select {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, select:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Styling for the submit button */
+button[type="Submit"] {
+    background-color: #0073e6;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="Submit"]:hover {
+    background-color: #005bb5;
+}
+
+/* Styling for the checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Centering elements */
+.center {
+    text-align: center;
+}
+
+/* Additional responsiveness */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    button[type="Submit"] {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <header>
+            <h1><b><U>Book your trip to Bali<u></b></h1>
+        </header>
+    </center>
+    <main>
+        <form action="backend_page.java">
+            <div>
+                <label for="Fname">First Name:</label>
+                <input type="text" id="Fname" required placeholder="Enter your First Name">
+                <label for="Mname">Middle Name:</label>
+                <input type="text" id="Mname" placeholder="Enter your Middle Name">
+                <label for="Lname">Last Name:</label>
+                <input type="text" id="Lname" required placeholder="Enter your Last Name">
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+                <select name="one" id="gender">
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="one">Male</option>
+                    <option value="one">female</option>
+                    <option value="one">other</option>
+                </select>
+            </div>
+            <div>
+                <label for="mail">Email Id:</label>
+                <input id="mail" type="text" required placeholder="Enter your Email ID">
+            </div>
+            <div>
+                <label for="ph">Contact no.:</label>
+                <input id="ph" type="tel" required placeholder="Enter your phone number">
+                <label for="Eph">Emergency no.:</label>
+                <input id="Eph" type="tel" required placeholder="Enter your Emergency number">
+            </div>
+            <div>
+                <label for="people">Number of People</label>
+                <input id="people" type="text" required>
+            </div>
+            <div>
+                <label for="sdate">stating date of your journey</label>
+                <input id="Sdate" type="date" required>
+            </div>
+            <div>
+                <label for="days">Number of days</label>
+                <input type="text" id="days" required>
+            </div>
+            <div>
+                <p>Pickup point:</p>
+                <label for="M">Mumbai</label>
+                <input type="radio" id="M" Name="ppoint">
+                <label for="R">russia</label>
+                <input type="radio" id="R" Name="ppoint">
+                <label for="U">USA</label>
+                <input type="radio" id="U" Name="ppoint">
+            </div>
+            <div>
+                <label for="comment">I agree the tncs of the form.</label>
+                <input id="comment" type="checkbox" required>
+            </div>
+            <div>
+                <center>
+                    <button type="Submit">Submit My Form</button>
+                </center>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
